@@ -1,0 +1,54 @@
+.login-container {
+	min-height: 100vh;
+}
+.left-login {
+	background: var(--violet);
+	min-height: 100vh;
+}
+.right-login {
+	background: linear-gradient(180deg, #fef9f6 0%, #fce4da 100%);
+}
+.icon {
+	color: #fce6db;
+	font-family: "Bebas Neue", cursive;
+	font-weight: 400;
+}
+.left-login-cont {
+	margin: 1.5rem;
+}
+.left-login-img {
+	position: relative;
+	top: 50%;
+}
+
+.right-login-img {
+	position: absolute;
+	width: 7%;
+	height: auto;
+	top: 30%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+	z-index: 11111;
+}
+.ellipse {
+	position: absolute;
+	width: 10%;
+	z-index: 1;
+	top: 28%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+.right-login-input-container {
+	position: absolute;
+	top: 58%;
+	left: 60%;
+	transform: translate(-50%, -50%);
+}
+.right-login-input-container input {
+	border-radius: 1rem;
+	background: transparent;
+	padding: 1rem 2rem;
+	margin: 1rem auto;
+	position: relative;
+	border: 2px solid #000;
+}

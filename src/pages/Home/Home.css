@@ -1,0 +1,46 @@
+.navbar {
+	font-family: "Bebas Neue", cursive;
+}
+.navbar-item {
+	color: var(--blue);
+}
+.banner {
+	margin-top: 9rem;
+}
+.banner-row {
+	max-width: 97%;
+}
+.banner-img {
+	width: 80%;
+}
+.banner-content-title {
+	text-align: end;
+	font-family: "Inter", sans-serif;
+	font-size: 4rem;
+}
+.banner-content-title span {
+	color: var(--blue);
+	font-weight: 800;
+}
+.banner-content-column {
+	margin-top: 2rem;
+}
+.banner-content-para {
+	text-align: end;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.banner-btn-row {
+	padding-top: 5rem;
+}
+.banner-btn {
+	font-family: "Bebas Neue", cursive;
+	font-weight: 400;
+	font-size: 1.3rem;
+	color: #fff;
+	border-radius: 0.7rem;
+	padding: 0.8rem 3rem;
+	background: var(--blue);
+	border: none;
+}
