@@ -55,9 +55,11 @@ const Home = () => {
 					</Row>
 					<Row className="banner-btn-row justify-content-center">
 						<Col md={12} className="text-center">
-							<button className="banner-btn">
-								Get Started <AiOutlineArrowRight className="arrow-icon" />
-							</button>
+							<Link to="/login">
+								<button className="banner-btn">
+									Get Started <AiOutlineArrowRight className="arrow-icon" />
+								</button>
+							</Link>
 						</Col>
 					</Row>
 				</div>

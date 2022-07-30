@@ -69,9 +69,11 @@ const Login = () => {
 									</Row>
 									<Row className="justify-content-center">
 										<Col className="text-center">
-											<button className="banner-btn">
-												<span>Log In</span>
-											</button>
+											<Link to="/dashboard">
+												<button className="banner-btn">
+													<span>Log In</span>
+												</button>
+											</Link>
 										</Col>
 									</Row>
 								</Col>

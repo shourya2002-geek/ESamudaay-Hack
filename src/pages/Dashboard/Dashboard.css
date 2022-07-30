@@ -1,11 +1,11 @@
-.login-container {
+.dash-container {
 	min-height: 100vh;
 }
-.left-login {
+.left-dash {
 	background: var(--violet);
 	min-height: 100vh;
 }
-.right-login {
+.right-dash {
 	background: linear-gradient(180deg, #fef9f6 0%, #fce4da 100%);
 }
 .icon {
@@ -13,15 +13,15 @@
 	font-family: "Bebas Neue", cursive;
 	font-weight: 400;
 }
-.left-login-cont {
+.left-dash-cont {
 	margin: 1.5rem;
 }
-.left-login-img {
+.left-dash-img {
 	position: relative;
 	top: 50%;
 }
 
-.right-login-img {
+.right-dash-img {
 	position: absolute;
 	width: 7%;
 	height: auto;
@@ -38,13 +38,13 @@
 	left: 60%;
 	transform: translate(-50%, -50%);
 }
-.right-login-input-container {
+.right-dash-input-container {
 	position: absolute;
 	top: 58%;
 	left: 60%;
 	transform: translate(-50%, -50%);
 }
-.right-login-input-container input {
+.right-dash-input-container input {
 	border-radius: 1rem;
 	background: transparent;
 	padding: 1rem 2rem;
@@ -52,11 +52,54 @@
 	position: relative;
 	border: 2px solid #000;
 }
+.shop-title {
+	margin-top: 5rem;
+	color: #fff;
+}
+.shop-desc {
+	color: #fff;
+	font-size: 0.75rem;
+}
+.shop-desc-large {
+	font-weight: 600;
+	font-size: 0.8rem;
+}
+.dash-left-img {
+	margin-top: 1rem;
+}
+.search-bar input {
+	width: 60vw;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	margin: 1rem auto;
+	border: 0.5px solid black;
+}
+.search-bar-icon {
+	margin: 1rem;
+	font-size: 2rem;
+}
+.card {
+	background: none;
+	border: none;
+}
+.card-text {
+	color: var(--blue);
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: end;
+}
+.fullfilments {
+	min-width: 50px;
+	min-height: 50px;
+	border: 1px solid var(--blue);
+	border-radius: 0.5rem;
+	margin-top: 1rem;
+}
 @media (max-width: 768px) {
-	.left-login {
+	.left-dash {
 		display: none;
 	}
-	.right-login-input-container {
+	.right-dash-input-container {
 		position: absolute;
 		top: 50%;
 		left: 50%;

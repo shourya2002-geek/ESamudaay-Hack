@@ -1,5 +1,6 @@
 .navbar {
 	font-family: "Bebas Neue", cursive;
+	padding-top: 10rem;
 }
 .navbar-item {
 	color: var(--blue);
@@ -37,7 +38,7 @@
 .banner-btn {
 	font-family: "Bebas Neue", cursive;
 	font-weight: 400;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	color: #fff;
 	border-radius: 0.7rem;
 	padding: 0.8rem 3rem;
