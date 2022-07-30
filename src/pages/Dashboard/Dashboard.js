@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useParams, useEffect } from "react";
 import "./Dashboard.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -7,103 +7,71 @@ import EllipseWhite from "../../assets/EllipseWhite.svg";
 import RectangleLeft from "../../assets/RectangleLeft.svg";
 import { BsSearch } from "react-icons/bs";
 import Card from "../../assets/card.svg";
+import axios from "axios";
+import { PieChart } from "react-minimal-pie-chart";
 
 const Dashboard = () => {
-	return (
-		<>
-			<div>
-				<div className="dash-container">
-					<Row>
-						<Col md={3} className="left-dash">
-							<div className="left-dash-cont">
-								<Row>
-									<Col>
-										<Link to="/" style={{ textDecoration: "none" }}>
-											<h2 className="icon">BITS N BYTES</h2>
-										</Link>
-									</Col>
-								</Row>
-								<Row className="justify-content-center">
-									<Col className="text-center">
-										<img
-											className="img-fluid left-dash-img"
-											src={EllipseWhite}
-											alt=""
-										/>
-									</Col>
-								</Row>
-								<Row className="justify-content-center shop-title">
-									<Col className="text-center">
-										<h1>Revada Stores</h1>
-									</Col>
-								</Row>
-								<Row className="justify-content-center shop-desc">
-									<Col className="text-center">
-										<p>
-											lorem-ipsum loremispsdfsdf asfav adsfasdfsdafasdf adfasdf
-										</p>
-									</Col>
-								</Row>
-								<Row className="justify-content-center shop-desc-large">
-									<Col className="text-center">
-										<p>
-											Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-											Nemo suscipit architecto incidunt eos blanditiis repellat
-											esse obcaecati vel nostrum corporis earum delectus vitae
-											nobis officiis sequi, dolore animi quasi officia!
-										</p>
-									</Col>
-								</Row>
-								<Row className="justify-content-center shop-desc-large">
-									<Col className="text-center">
-										<img
-											className="dash-left-img img-fluid"
-											src={RectangleLeft}
-											alt=""
-										/>
-									</Col>
-								</Row>
-							</div>
-						</Col>
-						<Col md={9} className="right-dash text-center">
-							<Row className="justify-content-center">
-								<Col className="text-center">
-									<div className="search-bar">
-										<input type="text" />
-										<BsSearch className="search-bar-icon" />
-									</div>
-								</Col>
-							</Row>
+  const var1 = true;
+  function getEvents() {
+    axios
+      .get(
+        "https://api.test.esamudaay.com/api/v1/businesses/0635ecff-8fde-4185-8cd8-167efda42bbc/report"
+      )
+      .then((response) => console.log(response));
+  }
+  useEffect(() => {
+    getEvents();
+  }, [var1]);
 
-							<div className="right-dash-disp-container">
-								<Row className="justify-content-around">
-									<Col md={2}>
-										<div className="card">
-											<img src={Card} className="img-fluid" alt="" />
-										</div>
-										<p className="card-text">Items</p>
-									</Col>
-									<Col md={2}>
-										<Row>
-											<Col>
-												<div className="fullfilments">Delivery</div>
-											</Col>
-										</Row>
-										<Row>
-											<Col>
-												<div className="fullfilments">Pickup</div>
-											</Col>
-										</Row>
-									</Col>
-									<Col md={2}>map</Col>
-								</Row>
-							</div>
-						</Col>
-					</Row>
-				</div>
-			</div>
-		</>
-	);
+  return (
+    <>
+      <div className="outer-cont">
+        <div className="left-cont">
+          <div className="rev">Revada Stores</div>
+
+          <div className="boxes">
+            <div className="box">
+              Total Products
+              <span className="data">25</span>
+             
+            </div>
+
+            <div className="box">
+              Total Products ;<span className="data">25</span>
+            </div>
+            <div className="box">
+              Total Products
+              <span className="data">25</span>
+            </div>
+          </div>
+
+          <div className="boxes">
+            <div className="box-errors">
+              <div className="error-1">
+                Types of errors
+                <span className="span-div">4</span>
+              </div>
+              <div className="error-2">
+                Total error
+                <span style={{ marginLeft: "17rem", color: "red" }}>4</span>
+              </div>
+
+              <div></div>
+            </div>
+            <div className="graph"></div>
+          </div>
+
+          <div className="boxes">
+            <div className="box-2">Div1</div>
+            <div className="box-2">Div1</div>
+            <div className="box-2">Div1</div>
+          </div>
+        </div>
+
+        <div className="right-cont"></div>
+      </div>
+    </>
+  );
 };
 
 export default Dashboard;
